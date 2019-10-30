@@ -1,0 +1,47 @@
+
+# Day 6: Let's Review
+
+### Task
+Given a string, , of length that is indexed from to , print its even-indexed and odd-indexed characters as
+
+space-separated strings on a single line (see the Sample below for more detail).
+
+### Note:
+is considered to be an even index. 
+
+### Input Format
+
+The first line contains an integer,T (the number of test cases).
+Each line i of the T subsequent lines contain a String, S.
+
+Sample Input
+''' 
+  2
+  Hacker
+  Rank
+
+'''
+
+Sample Output
+
+'''
+Hce akr
+Rn ak
+
+'''
+
+
+
+#code
+  Method One
+  if __name__ == "__main__":
+        t = int(input())
+
+        for x in range(t):
+                s = input()
+                print(s[::2], s[1::2])
+                
+   Method Two
+  for i in range(int(input())): s=input(); print(*["".join(s[::2]),"".join(s[1::2])])
+  or 
+  for x in range(int(input())): s=input(); print(*[s[::2], s[1::2]])
